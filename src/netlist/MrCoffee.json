@@ -1,0 +1,6917 @@
+{
+  "format": "netlist-viewer",
+  "version": 1,
+  "top": "MrCoffee",
+  "modules": [
+    {
+      "name": "MrCoffee",
+      "ports": [
+        {
+          "name": "CLK_I",
+          "direction": "input",
+          "nets": [
+            "CLK_I"
+          ]
+        },
+        {
+          "name": "RST_ASYNC_I",
+          "direction": "input",
+          "nets": [
+            "RST_ASYNC_I"
+          ]
+        },
+        {
+          "name": "START",
+          "direction": "input",
+          "nets": [
+            "START"
+          ]
+        },
+        {
+          "name": "GRINDER_EN",
+          "direction": "output",
+          "nets": [
+            "GRINDER_EN"
+          ]
+        },
+        {
+          "name": "HEATER_EN",
+          "direction": "output",
+          "nets": [
+            "HEATER_EN"
+          ]
+        },
+        {
+          "name": "PUMP_EN",
+          "direction": "output",
+          "nets": [
+            "PUMP_EN"
+          ]
+        },
+        {
+          "name": "READY",
+          "direction": "output",
+          "nets": [
+            "const:0"
+          ]
+        }
+      ],
+      "wires": [
+        {
+          "name": "CLK_I",
+          "nets": [
+            "CLK_I"
+          ]
+        },
+        {
+          "name": "EVENT_START_falling",
+          "nets": [
+            "EVENT_START_falling"
+          ]
+        },
+        {
+          "name": "EVENT_START_rising",
+          "nets": [
+            "EVENT_START_rising"
+          ]
+        },
+        {
+          "name": "GRINDER_EN",
+          "nets": [
+            "GRINDER_EN"
+          ]
+        },
+        {
+          "name": "HEATER_EN",
+          "nets": [
+            "HEATER_EN"
+          ]
+        },
+        {
+          "name": "I_TIMER_0_delay",
+          "nets": [
+            "const:0",
+            "const:0",
+            "const:0",
+            "const:0",
+            "const:0",
+            "const:0",
+            "I_TIMER_0_delay[6]",
+            "I_TIMER_0_delay[7]",
+            "const:0",
+            "I_TIMER_0_delay[9]",
+            "I_TIMER_0_delay[7]",
+            "const:0",
+            "I_TIMER_0_delay[7]",
+            "const:0",
+            "I_TIMER_0_delay[6]",
+            "I_TIMER_0_delay[7]",
+            "I_TIMER_0_delay[6]",
+            "I_TIMER_0_delay[6]",
+            "I_TIMER_0_delay[6]",
+            "I_TIMER_0_delay[9]",
+            "I_TIMER_0_delay[7]",
+            "const:0",
+            "const:0",
+            "I_TIMER_0_delay[7]"
+          ]
+        },
+        {
+          "name": "I_TIMER_0_reload",
+          "nets": [
+            "I_TIMER_0_reload"
+          ]
+        },
+        {
+          "name": "I_TIMER_0_zero",
+          "nets": [
+            "I_TIMER_0_zero"
+          ]
+        },
+        {
+          "name": "PUMP_EN",
+          "nets": [
+            "PUMP_EN"
+          ]
+        },
+        {
+          "name": "READY",
+          "nets": [
+            "const:0"
+          ]
+        },
+        {
+          "name": "RST_ASYNC_I",
+          "nets": [
+            "RST_ASYNC_I"
+          ]
+        },
+        {
+          "name": "START",
+          "nets": [
+            "START"
+          ]
+        },
+        {
+          "name": "_000_",
+          "nets": [
+            "_000_"
+          ]
+        },
+        {
+          "name": "_001_",
+          "nets": [
+            "const:0",
+            "const:0",
+            "const:0",
+            "const:0",
+            "const:0",
+            "const:0",
+            "_000_",
+            "_001_[7]",
+            "const:0",
+            "_001_[9]",
+            "_001_[7]",
+            "const:0",
+            "_001_[7]",
+            "const:0",
+            "_000_",
+            "_001_[7]",
+            "_000_",
+            "_000_",
+            "_000_",
+            "_001_[9]",
+            "_001_[7]",
+            "const:0",
+            "const:0",
+            "_001_[7]"
+          ]
+        },
+        {
+          "name": "_002_",
+          "nets": [
+            "_002_"
+          ]
+        },
+        {
+          "name": "_003_",
+          "nets": [
+            "_003_"
+          ]
+        },
+        {
+          "name": "_004_",
+          "nets": [
+            "_004_"
+          ]
+        },
+        {
+          "name": "_005_",
+          "nets": [
+            "_005_"
+          ]
+        },
+        {
+          "name": "_006_",
+          "nets": [
+            "_006_"
+          ]
+        },
+        {
+          "name": "_007_",
+          "nets": [
+            "_007_"
+          ]
+        },
+        {
+          "name": "_008_",
+          "nets": [
+            "_008_"
+          ]
+        },
+        {
+          "name": "_009_",
+          "nets": [
+            "_009_"
+          ]
+        },
+        {
+          "name": "_010_",
+          "nets": [
+            "_010_"
+          ]
+        },
+        {
+          "name": "_011_",
+          "nets": [
+            "_011_"
+          ]
+        },
+        {
+          "name": "_012_",
+          "nets": [
+            "_012_"
+          ]
+        },
+        {
+          "name": "_013_",
+          "nets": [
+            "_013_"
+          ]
+        },
+        {
+          "name": "_014_",
+          "nets": [
+            "_014_"
+          ]
+        },
+        {
+          "name": "_015_",
+          "nets": [
+            "_015_"
+          ]
+        },
+        {
+          "name": "_016_",
+          "nets": [
+            "_016_"
+          ]
+        },
+        {
+          "name": "_017_",
+          "nets": [
+            "_017_"
+          ]
+        },
+        {
+          "name": "_018_",
+          "nets": [
+            "_018_"
+          ]
+        },
+        {
+          "name": "_019_",
+          "nets": [
+            "_019_"
+          ]
+        },
+        {
+          "name": "_020_",
+          "nets": [
+            "_020_"
+          ]
+        },
+        {
+          "name": "_021_",
+          "nets": [
+            "_021_"
+          ]
+        },
+        {
+          "name": "_022_",
+          "nets": [
+            "_022_"
+          ]
+        },
+        {
+          "name": "_023_",
+          "nets": [
+            "_023_"
+          ]
+        },
+        {
+          "name": "_024_",
+          "nets": [
+            "_024_"
+          ]
+        },
+        {
+          "name": "_025_",
+          "nets": [
+            "_025_"
+          ]
+        },
+        {
+          "name": "_026_",
+          "nets": [
+            "_026_"
+          ]
+        },
+        {
+          "name": "_027_",
+          "nets": [
+            "_027_"
+          ]
+        },
+        {
+          "name": "_028_",
+          "nets": [
+            "_028_"
+          ]
+        },
+        {
+          "name": "_029_",
+          "nets": [
+            "_029_"
+          ]
+        },
+        {
+          "name": "_030_",
+          "nets": [
+            "_030_"
+          ]
+        },
+        {
+          "name": "_031_",
+          "nets": [
+            "_031_"
+          ]
+        },
+        {
+          "name": "_032_",
+          "nets": [
+            "_032_"
+          ]
+        },
+        {
+          "name": "_033_",
+          "nets": [
+            "_033_"
+          ]
+        },
+        {
+          "name": "_034_",
+          "nets": [
+            "_034_"
+          ]
+        },
+        {
+          "name": "_035_",
+          "nets": [
+            "_035_"
+          ]
+        },
+        {
+          "name": "_036_",
+          "nets": [
+            "_036_"
+          ]
+        },
+        {
+          "name": "_037_",
+          "nets": [
+            "_037_"
+          ]
+        },
+        {
+          "name": "_038_",
+          "nets": [
+            "_038_"
+          ]
+        },
+        {
+          "name": "_039_",
+          "nets": [
+            "_039_"
+          ]
+        },
+        {
+          "name": "_040_",
+          "nets": [
+            "_040_"
+          ]
+        },
+        {
+          "name": "_041_",
+          "nets": [
+            "_041_"
+          ]
+        },
+        {
+          "name": "_042_",
+          "nets": [
+            "_042_"
+          ]
+        },
+        {
+          "name": "_043_",
+          "nets": [
+            "_043_"
+          ]
+        },
+        {
+          "name": "_044_",
+          "nets": [
+            "_044_"
+          ]
+        },
+        {
+          "name": "_045_",
+          "nets": [
+            "_045_"
+          ]
+        },
+        {
+          "name": "_046_",
+          "nets": [
+            "_046_"
+          ]
+        },
+        {
+          "name": "_047_",
+          "nets": [
+            "_047_"
+          ]
+        },
+        {
+          "name": "_048_",
+          "nets": [
+            "_048_"
+          ]
+        },
+        {
+          "name": "_049_",
+          "nets": [
+            "_049_"
+          ]
+        },
+        {
+          "name": "_050_",
+          "nets": [
+            "_050_"
+          ]
+        },
+        {
+          "name": "_051_",
+          "nets": [
+            "_051_"
+          ]
+        },
+        {
+          "name": "_052_",
+          "nets": [
+            "_052_"
+          ]
+        },
+        {
+          "name": "_053_",
+          "nets": [
+            "_053_"
+          ]
+        },
+        {
+          "name": "_054_",
+          "nets": [
+            "_054_"
+          ]
+        },
+        {
+          "name": "_055_",
+          "nets": [
+            "_055_"
+          ]
+        },
+        {
+          "name": "_056_",
+          "nets": [
+            "_056_"
+          ]
+        },
+        {
+          "name": "_057_",
+          "nets": [
+            "_057_"
+          ]
+        },
+        {
+          "name": "_058_",
+          "nets": [
+            "_058_"
+          ]
+        },
+        {
+          "name": "_059_",
+          "nets": [
+            "_059_"
+          ]
+        },
+        {
+          "name": "_060_",
+          "nets": [
+            "_060_"
+          ]
+        },
+        {
+          "name": "_061_",
+          "nets": [
+            "_061_"
+          ]
+        },
+        {
+          "name": "_062_",
+          "nets": [
+            "_062_"
+          ]
+        },
+        {
+          "name": "_063_",
+          "nets": [
+            "_063_"
+          ]
+        },
+        {
+          "name": "_064_",
+          "nets": [
+            "_064_"
+          ]
+        },
+        {
+          "name": "_065_",
+          "nets": [
+            "_065_"
+          ]
+        },
+        {
+          "name": "_066_",
+          "nets": [
+            "_066_"
+          ]
+        },
+        {
+          "name": "_067_",
+          "nets": [
+            "_067_"
+          ]
+        },
+        {
+          "name": "_068_",
+          "nets": [
+            "_068_"
+          ]
+        },
+        {
+          "name": "_069_",
+          "nets": [
+            "_069_"
+          ]
+        },
+        {
+          "name": "_070_",
+          "nets": [
+            "_070_"
+          ]
+        },
+        {
+          "name": "_071_",
+          "nets": [
+            "_071_"
+          ]
+        },
+        {
+          "name": "_072_",
+          "nets": [
+            "_072_"
+          ]
+        },
+        {
+          "name": "_073_",
+          "nets": [
+            "_073_"
+          ]
+        },
+        {
+          "name": "_074_",
+          "nets": [
+            "_074_"
+          ]
+        },
+        {
+          "name": "_075_",
+          "nets": [
+            "_075_"
+          ]
+        },
+        {
+          "name": "_076_",
+          "nets": [
+            "_076_"
+          ]
+        },
+        {
+          "name": "_077_",
+          "nets": [
+            "_077_"
+          ]
+        },
+        {
+          "name": "_078_",
+          "nets": [
+            "_078_"
+          ]
+        },
+        {
+          "name": "_079_",
+          "nets": [
+            "_079_"
+          ]
+        },
+        {
+          "name": "_080_",
+          "nets": [
+            "_080_"
+          ]
+        },
+        {
+          "name": "_081_",
+          "nets": [
+            "_081_"
+          ]
+        },
+        {
+          "name": "_082_",
+          "nets": [
+            "_082_"
+          ]
+        },
+        {
+          "name": "_083_",
+          "nets": [
+            "_083_"
+          ]
+        },
+        {
+          "name": "state",
+          "nets": [
+            "state[0]",
+            "state[1]",
+            "state[2]",
+            "state[3]",
+            "state[4]",
+            "state[5]",
+            "state[6]",
+            "state[7]",
+            "state[8]",
+            "state[9]",
+            "state[10]",
+            "state[11]",
+            "state[12]",
+            "state[13]",
+            "state[14]",
+            "state[15]",
+            "state[16]",
+            "state[17]",
+            "state[18]",
+            "state[19]",
+            "state[20]",
+            "state[21]",
+            "state[22]",
+            "state[23]",
+            "state[24]",
+            "state[25]",
+            "state[26]",
+            "state[27]",
+            "state[28]",
+            "state[29]",
+            "state[30]",
+            "state[31]"
+          ]
+        },
+        {
+          "name": "state_nxt",
+          "nets": [
+            "state_nxt[0]",
+            "state_nxt[1]",
+            "state_nxt[2]",
+            "state_nxt[3]",
+            "state[4]",
+            "state[5]",
+            "state[6]",
+            "state[7]",
+            "state[8]",
+            "state[9]",
+            "state[10]",
+            "state[11]",
+            "state[12]",
+            "state[13]",
+            "state[14]",
+            "state[15]",
+            "state[16]",
+            "state[17]",
+            "state[18]",
+            "state[19]",
+            "state[20]",
+            "state[21]",
+            "state[22]",
+            "state[23]",
+            "state[24]",
+            "state[25]",
+            "state[26]",
+            "state[27]",
+            "state[28]",
+            "state[29]",
+            "state[30]",
+            "state[31]"
+          ]
+        }
+      ],
+      "instances": [
+        {
+          "name": "GRINDER_EN_reg",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_000_"
+            ],
+            "E": [
+              "_002_"
+            ],
+            "Q": [
+              "GRINDER_EN"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "HEATER_EN_reg",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_000_"
+            ],
+            "E": [
+              "_003_"
+            ],
+            "Q": [
+              "HEATER_EN"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "I_EVENT_EDGE_DETECTOR_START",
+          "type": "nortl_edge_detector$MrCoffee.I_EVENT_EDGE_DETECTOR_START",
+          "connections": {
+            "CLK_I": [
+              "CLK_I"
+            ],
+            "FALLING": [
+              "EVENT_START_falling"
+            ],
+            "RISING": [
+              "EVENT_START_rising"
+            ],
+            "RST_ASYNC_I": [
+              "RST_ASYNC_I"
+            ],
+            "SIGNAL": [
+              "START"
+            ]
+          }
+        },
+        {
+          "name": "I_TIMER_0",
+          "type": "nortl_count_down_timer$MrCoffee.I_TIMER_0",
+          "connections": {
+            "CLK_I": [
+              "CLK_I"
+            ],
+            "DELAY": [
+              "const:0",
+              "const:0",
+              "const:0",
+              "const:0",
+              "const:0",
+              "const:0",
+              "I_TIMER_0_delay[6]",
+              "I_TIMER_0_delay[7]",
+              "const:0",
+              "I_TIMER_0_delay[9]",
+              "I_TIMER_0_delay[7]",
+              "const:0",
+              "I_TIMER_0_delay[7]",
+              "const:0",
+              "I_TIMER_0_delay[6]",
+              "I_TIMER_0_delay[7]",
+              "I_TIMER_0_delay[6]",
+              "I_TIMER_0_delay[6]",
+              "I_TIMER_0_delay[6]",
+              "I_TIMER_0_delay[9]",
+              "I_TIMER_0_delay[7]",
+              "const:0",
+              "const:0",
+              "I_TIMER_0_delay[7]"
+            ],
+            "RELOAD": [
+              "I_TIMER_0_reload"
+            ],
+            "RST_ASYNC_I": [
+              "RST_ASYNC_I"
+            ],
+            "ZERO": [
+              "I_TIMER_0_zero"
+            ]
+          }
+        },
+        {
+          "name": "I_TIMER_0_delay_reg[18]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_000_"
+            ],
+            "E": [
+              "_005_"
+            ],
+            "Q": [
+              "I_TIMER_0_delay[6]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "I_TIMER_0_delay_reg[19]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_001_[9]"
+            ],
+            "E": [
+              "_005_"
+            ],
+            "Q": [
+              "I_TIMER_0_delay[9]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "I_TIMER_0_delay_reg[20]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_001_[7]"
+            ],
+            "E": [
+              "_005_"
+            ],
+            "Q": [
+              "I_TIMER_0_delay[7]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "I_TIMER_0_reload_reg",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_001_[9]"
+            ],
+            "E": [
+              "_006_"
+            ],
+            "Q": [
+              "I_TIMER_0_reload"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "PUMP_EN_reg",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_001_[7]"
+            ],
+            "E": [
+              "_004_"
+            ],
+            "Q": [
+              "PUMP_EN"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "_084_",
+          "type": "$_NOT_",
+          "connections": {
+            "A": [
+              "I_TIMER_0_zero"
+            ],
+            "Y": [
+              "_062_"
+            ]
+          }
+        },
+        {
+          "name": "_085_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[23]"
+            ],
+            "B": [
+              "state[20]"
+            ],
+            "Y": [
+              "_063_"
+            ]
+          }
+        },
+        {
+          "name": "_086_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[16]"
+            ],
+            "B": [
+              "state[30]"
+            ],
+            "Y": [
+              "_064_"
+            ]
+          }
+        },
+        {
+          "name": "_087_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_063_"
+            ],
+            "B": [
+              "_064_"
+            ],
+            "Y": [
+              "_065_"
+            ]
+          }
+        },
+        {
+          "name": "_088_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[28]"
+            ],
+            "B": [
+              "state[24]"
+            ],
+            "Y": [
+              "_066_"
+            ]
+          }
+        },
+        {
+          "name": "_089_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[21]"
+            ],
+            "B": [
+              "state[17]"
+            ],
+            "Y": [
+              "_067_"
+            ]
+          }
+        },
+        {
+          "name": "_090_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[19]"
+            ],
+            "B": [
+              "state[25]"
+            ],
+            "Y": [
+              "_068_"
+            ]
+          }
+        },
+        {
+          "name": "_091_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_067_"
+            ],
+            "B": [
+              "_068_"
+            ],
+            "Y": [
+              "_069_"
+            ]
+          }
+        },
+        {
+          "name": "_092_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_065_"
+            ],
+            "B": [
+              "_069_"
+            ],
+            "Y": [
+              "_070_"
+            ]
+          }
+        },
+        {
+          "name": "_093_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[29]"
+            ],
+            "B": [
+              "state[31]"
+            ],
+            "Y": [
+              "_071_"
+            ]
+          }
+        },
+        {
+          "name": "_094_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_066_"
+            ],
+            "B": [
+              "_071_"
+            ],
+            "Y": [
+              "_072_"
+            ]
+          }
+        },
+        {
+          "name": "_095_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[18]"
+            ],
+            "B": [
+              "state[26]"
+            ],
+            "Y": [
+              "_073_"
+            ]
+          }
+        },
+        {
+          "name": "_096_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[22]"
+            ],
+            "B": [
+              "state[27]"
+            ],
+            "Y": [
+              "_074_"
+            ]
+          }
+        },
+        {
+          "name": "_097_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_073_"
+            ],
+            "B": [
+              "_074_"
+            ],
+            "Y": [
+              "_075_"
+            ]
+          }
+        },
+        {
+          "name": "_098_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_072_"
+            ],
+            "B": [
+              "_075_"
+            ],
+            "Y": [
+              "_076_"
+            ]
+          }
+        },
+        {
+          "name": "_099_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_070_"
+            ],
+            "B": [
+              "_076_"
+            ],
+            "Y": [
+              "_077_"
+            ]
+          }
+        },
+        {
+          "name": "_100_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[8]"
+            ],
+            "B": [
+              "state[12]"
+            ],
+            "Y": [
+              "_078_"
+            ]
+          }
+        },
+        {
+          "name": "_101_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[11]"
+            ],
+            "B": [
+              "state[14]"
+            ],
+            "Y": [
+              "_079_"
+            ]
+          }
+        },
+        {
+          "name": "_102_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[15]"
+            ],
+            "B": [
+              "state[10]"
+            ],
+            "Y": [
+              "_080_"
+            ]
+          }
+        },
+        {
+          "name": "_103_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_079_"
+            ],
+            "B": [
+              "_080_"
+            ],
+            "Y": [
+              "_081_"
+            ]
+          }
+        },
+        {
+          "name": "_104_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[9]"
+            ],
+            "B": [
+              "state[13]"
+            ],
+            "Y": [
+              "_082_"
+            ]
+          }
+        },
+        {
+          "name": "_105_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_081_"
+            ],
+            "B": [
+              "_082_"
+            ],
+            "Y": [
+              "_083_"
+            ]
+          }
+        },
+        {
+          "name": "_106_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_078_"
+            ],
+            "B": [
+              "_083_"
+            ],
+            "Y": [
+              "_007_"
+            ]
+          }
+        },
+        {
+          "name": "_107_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_077_"
+            ],
+            "B": [
+              "_007_"
+            ],
+            "Y": [
+              "_008_"
+            ]
+          }
+        },
+        {
+          "name": "_108_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[1]"
+            ],
+            "B": [
+              "state[0]"
+            ],
+            "Y": [
+              "_009_"
+            ]
+          }
+        },
+        {
+          "name": "_109_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[7]"
+            ],
+            "B": [
+              "state[6]"
+            ],
+            "Y": [
+              "_010_"
+            ]
+          }
+        },
+        {
+          "name": "_110_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "state[5]"
+            ],
+            "B": [
+              "state[4]"
+            ],
+            "Y": [
+              "_011_"
+            ]
+          }
+        },
+        {
+          "name": "_111_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_010_"
+            ],
+            "B": [
+              "_011_"
+            ],
+            "Y": [
+              "_012_"
+            ]
+          }
+        },
+        {
+          "name": "_112_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "state[3]"
+            ],
+            "B": [
+              "state[2]"
+            ],
+            "Y": [
+              "_013_"
+            ]
+          }
+        },
+        {
+          "name": "_113_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_012_"
+            ],
+            "B": [
+              "_013_"
+            ],
+            "Y": [
+              "_014_"
+            ]
+          }
+        },
+        {
+          "name": "_114_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_009_"
+            ],
+            "B": [
+              "_014_"
+            ],
+            "Y": [
+              "_015_"
+            ]
+          }
+        },
+        {
+          "name": "_115_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_008_"
+            ],
+            "B": [
+              "_015_"
+            ],
+            "Y": [
+              "_016_"
+            ]
+          }
+        },
+        {
+          "name": "_116_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "state[1]"
+            ],
+            "B": [
+              "state[0]"
+            ],
+            "Y": [
+              "_017_"
+            ]
+          }
+        },
+        {
+          "name": "_117_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_008_"
+            ],
+            "B": [
+              "_017_"
+            ],
+            "Y": [
+              "_018_"
+            ]
+          }
+        },
+        {
+          "name": "_118_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_012_"
+            ],
+            "B": [
+              "state[3]"
+            ],
+            "Y": [
+              "_019_"
+            ]
+          }
+        },
+        {
+          "name": "_119_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "state[2]"
+            ],
+            "B": [
+              "_019_"
+            ],
+            "Y": [
+              "_020_"
+            ]
+          }
+        },
+        {
+          "name": "_120_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_018_"
+            ],
+            "B": [
+              "_020_"
+            ],
+            "Y": [
+              "_021_"
+            ]
+          }
+        },
+        {
+          "name": "_121_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_016_"
+            ],
+            "B": [
+              "_021_"
+            ],
+            "Y": [
+              "_022_"
+            ]
+          }
+        },
+        {
+          "name": "_122_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_019_"
+            ],
+            "B": [
+              "state[2]"
+            ],
+            "Y": [
+              "_023_"
+            ]
+          }
+        },
+        {
+          "name": "_123_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_018_"
+            ],
+            "B": [
+              "_023_"
+            ],
+            "Y": [
+              "_024_"
+            ]
+          }
+        },
+        {
+          "name": "_124_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "state[0]"
+            ],
+            "B": [
+              "state[1]"
+            ],
+            "Y": [
+              "_025_"
+            ]
+          }
+        },
+        {
+          "name": "_125_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_023_"
+            ],
+            "B": [
+              "_025_"
+            ],
+            "Y": [
+              "_026_"
+            ]
+          }
+        },
+        {
+          "name": "_126_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_008_"
+            ],
+            "B": [
+              "_026_"
+            ],
+            "Y": [
+              "_027_"
+            ]
+          }
+        },
+        {
+          "name": "_127_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_014_"
+            ],
+            "B": [
+              "_025_"
+            ],
+            "Y": [
+              "_028_"
+            ]
+          }
+        },
+        {
+          "name": "_128_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_008_"
+            ],
+            "B": [
+              "_028_"
+            ],
+            "Y": [
+              "_029_"
+            ]
+          }
+        },
+        {
+          "name": "_129_",
+          "type": "$_ORNOT_",
+          "connections": {
+            "A": [
+              "_027_"
+            ],
+            "B": [
+              "_029_"
+            ],
+            "Y": [
+              "_030_"
+            ]
+          }
+        },
+        {
+          "name": "_130_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_024_"
+            ],
+            "B": [
+              "_030_"
+            ],
+            "Y": [
+              "_031_"
+            ]
+          }
+        },
+        {
+          "name": "_131_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "state[1]"
+            ],
+            "B": [
+              "_019_"
+            ],
+            "Y": [
+              "_032_"
+            ]
+          }
+        },
+        {
+          "name": "_132_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "_023_"
+            ],
+            "B": [
+              "_032_"
+            ],
+            "Y": [
+              "_033_"
+            ]
+          }
+        },
+        {
+          "name": "_133_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_008_"
+            ],
+            "B": [
+              "state[0]"
+            ],
+            "Y": [
+              "_034_"
+            ]
+          }
+        },
+        {
+          "name": "_134_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_033_"
+            ],
+            "B": [
+              "_034_"
+            ],
+            "Y": [
+              "_035_"
+            ]
+          }
+        },
+        {
+          "name": "_135_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_008_"
+            ],
+            "B": [
+              "_020_"
+            ],
+            "Y": [
+              "_036_"
+            ]
+          }
+        },
+        {
+          "name": "_136_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_036_"
+            ],
+            "B": [
+              "state[1]"
+            ],
+            "Y": [
+              "_037_"
+            ]
+          }
+        },
+        {
+          "name": "_137_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_035_"
+            ],
+            "B": [
+              "_037_"
+            ],
+            "Y": [
+              "_038_"
+            ]
+          }
+        },
+        {
+          "name": "_138_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_031_"
+            ],
+            "B": [
+              "_038_"
+            ],
+            "Y": [
+              "_039_"
+            ]
+          }
+        },
+        {
+          "name": "_139_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_022_"
+            ],
+            "B": [
+              "_039_"
+            ],
+            "Y": [
+              "_040_"
+            ]
+          }
+        },
+        {
+          "name": "_140_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "state[2]"
+            ],
+            "B": [
+              "_040_"
+            ],
+            "Y": [
+              "_041_"
+            ]
+          }
+        },
+        {
+          "name": "_141_",
+          "type": "$_ORNOT_",
+          "connections": {
+            "A": [
+              "_017_"
+            ],
+            "B": [
+              "_036_"
+            ],
+            "Y": [
+              "_042_"
+            ]
+          }
+        },
+        {
+          "name": "_142_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_024_"
+            ],
+            "B": [
+              "_042_"
+            ],
+            "Y": [
+              "_043_"
+            ]
+          }
+        },
+        {
+          "name": "_143_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_041_"
+            ],
+            "B": [
+              "_043_"
+            ],
+            "Y": [
+              "state_nxt[2]"
+            ]
+          }
+        },
+        {
+          "name": "_144_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "state[3]"
+            ],
+            "B": [
+              "_040_"
+            ],
+            "Y": [
+              "_044_"
+            ]
+          }
+        },
+        {
+          "name": "_145_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_022_"
+            ],
+            "B": [
+              "_044_"
+            ],
+            "Y": [
+              "state_nxt[3]"
+            ]
+          }
+        },
+        {
+          "name": "_146_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_027_"
+            ],
+            "B": [
+              "EVENT_START_rising"
+            ],
+            "Y": [
+              "_045_"
+            ]
+          }
+        },
+        {
+          "name": "_147_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "_040_"
+            ],
+            "B": [
+              "_045_"
+            ],
+            "Y": [
+              "_046_"
+            ]
+          }
+        },
+        {
+          "name": "_148_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "state[0]"
+            ],
+            "B": [
+              "_046_"
+            ],
+            "Y": [
+              "_047_"
+            ]
+          }
+        },
+        {
+          "name": "_149_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "_062_"
+            ],
+            "B": [
+              "_016_"
+            ],
+            "Y": [
+              "_048_"
+            ]
+          }
+        },
+        {
+          "name": "_150_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "I_TIMER_0_zero"
+            ],
+            "B": [
+              "_009_"
+            ],
+            "Y": [
+              "_049_"
+            ]
+          }
+        },
+        {
+          "name": "_151_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_036_"
+            ],
+            "B": [
+              "_049_"
+            ],
+            "Y": [
+              "_050_"
+            ]
+          }
+        },
+        {
+          "name": "_152_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_035_"
+            ],
+            "B": [
+              "_050_"
+            ],
+            "Y": [
+              "_051_"
+            ]
+          }
+        },
+        {
+          "name": "_153_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_048_"
+            ],
+            "B": [
+              "_051_"
+            ],
+            "Y": [
+              "_052_"
+            ]
+          }
+        },
+        {
+          "name": "_154_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_047_"
+            ],
+            "B": [
+              "_052_"
+            ],
+            "Y": [
+              "state_nxt[0]"
+            ]
+          }
+        },
+        {
+          "name": "_155_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "state[1]"
+            ],
+            "B": [
+              "_040_"
+            ],
+            "Y": [
+              "_053_"
+            ]
+          }
+        },
+        {
+          "name": "_156_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "state[1]"
+            ],
+            "B": [
+              "EVENT_START_rising"
+            ],
+            "Y": [
+              "_054_"
+            ]
+          }
+        },
+        {
+          "name": "_157_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_027_"
+            ],
+            "B": [
+              "_054_"
+            ],
+            "Y": [
+              "_055_"
+            ]
+          }
+        },
+        {
+          "name": "_158_",
+          "type": "$_NOT_",
+          "connections": {
+            "A": [
+              "_055_"
+            ],
+            "Y": [
+              "_000_"
+            ]
+          }
+        },
+        {
+          "name": "_159_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "state[0]"
+            ],
+            "B": [
+              "_037_"
+            ],
+            "Y": [
+              "_056_"
+            ]
+          }
+        },
+        {
+          "name": "_160_",
+          "type": "$_NOT_",
+          "connections": {
+            "A": [
+              "_056_"
+            ],
+            "Y": [
+              "_001_[7]"
+            ]
+          }
+        },
+        {
+          "name": "_161_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_055_"
+            ],
+            "B": [
+              "_056_"
+            ],
+            "Y": [
+              "_057_"
+            ]
+          }
+        },
+        {
+          "name": "_162_",
+          "type": "$_NOT_",
+          "connections": {
+            "A": [
+              "_057_"
+            ],
+            "Y": [
+              "_001_[9]"
+            ]
+          }
+        },
+        {
+          "name": "_163_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_032_"
+            ],
+            "B": [
+              "_034_"
+            ],
+            "Y": [
+              "_058_"
+            ]
+          }
+        },
+        {
+          "name": "_164_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_057_"
+            ],
+            "B": [
+              "_058_"
+            ],
+            "Y": [
+              "_059_"
+            ]
+          }
+        },
+        {
+          "name": "_165_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_053_"
+            ],
+            "B": [
+              "_059_"
+            ],
+            "Y": [
+              "state_nxt[1]"
+            ]
+          }
+        },
+        {
+          "name": "_166_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_029_"
+            ],
+            "B": [
+              "_057_"
+            ],
+            "Y": [
+              "_005_"
+            ]
+          }
+        },
+        {
+          "name": "_167_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_029_"
+            ],
+            "B": [
+              "_050_"
+            ],
+            "Y": [
+              "_060_"
+            ]
+          }
+        },
+        {
+          "name": "_168_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_055_"
+            ],
+            "B": [
+              "_060_"
+            ],
+            "Y": [
+              "_002_"
+            ]
+          }
+        },
+        {
+          "name": "_169_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_029_"
+            ],
+            "B": [
+              "_048_"
+            ],
+            "Y": [
+              "_061_"
+            ]
+          }
+        },
+        {
+          "name": "_170_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_056_"
+            ],
+            "B": [
+              "_061_"
+            ],
+            "Y": [
+              "_004_"
+            ]
+          }
+        },
+        {
+          "name": "_171_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_055_"
+            ],
+            "B": [
+              "_061_"
+            ],
+            "Y": [
+              "_003_"
+            ]
+          }
+        },
+        {
+          "name": "_172_",
+          "type": "$_ORNOT_",
+          "connections": {
+            "A": [
+              "_005_"
+            ],
+            "B": [
+              "_058_"
+            ],
+            "Y": [
+              "_006_"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[0]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state_nxt[0]"
+            ],
+            "Q": [
+              "state[0]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[10]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[10]"
+            ],
+            "Q": [
+              "state[10]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[11]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[11]"
+            ],
+            "Q": [
+              "state[11]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[12]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[12]"
+            ],
+            "Q": [
+              "state[12]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[13]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[13]"
+            ],
+            "Q": [
+              "state[13]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[14]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[14]"
+            ],
+            "Q": [
+              "state[14]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[15]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[15]"
+            ],
+            "Q": [
+              "state[15]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[16]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[16]"
+            ],
+            "Q": [
+              "state[16]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[17]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[17]"
+            ],
+            "Q": [
+              "state[17]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[18]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[18]"
+            ],
+            "Q": [
+              "state[18]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[19]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[19]"
+            ],
+            "Q": [
+              "state[19]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[1]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state_nxt[1]"
+            ],
+            "Q": [
+              "state[1]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[20]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[20]"
+            ],
+            "Q": [
+              "state[20]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[21]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[21]"
+            ],
+            "Q": [
+              "state[21]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[22]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[22]"
+            ],
+            "Q": [
+              "state[22]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[23]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[23]"
+            ],
+            "Q": [
+              "state[23]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[24]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[24]"
+            ],
+            "Q": [
+              "state[24]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[25]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[25]"
+            ],
+            "Q": [
+              "state[25]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[26]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[26]"
+            ],
+            "Q": [
+              "state[26]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[27]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[27]"
+            ],
+            "Q": [
+              "state[27]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[28]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[28]"
+            ],
+            "Q": [
+              "state[28]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[29]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[29]"
+            ],
+            "Q": [
+              "state[29]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[2]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state_nxt[2]"
+            ],
+            "Q": [
+              "state[2]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[30]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[30]"
+            ],
+            "Q": [
+              "state[30]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[31]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[31]"
+            ],
+            "Q": [
+              "state[31]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[3]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state_nxt[3]"
+            ],
+            "Q": [
+              "state[3]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[4]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[4]"
+            ],
+            "Q": [
+              "state[4]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[5]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[5]"
+            ],
+            "Q": [
+              "state[5]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[6]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[6]"
+            ],
+            "Q": [
+              "state[6]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[7]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[7]"
+            ],
+            "Q": [
+              "state[7]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[8]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[8]"
+            ],
+            "Q": [
+              "state[8]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "state_reg[9]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "state[9]"
+            ],
+            "Q": [
+              "state[9]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "nortl_count_down_timer$MrCoffee.I_TIMER_0",
+      "ports": [
+        {
+          "name": "DELAY",
+          "direction": "input",
+          "nets": [
+            "DELAY[0]",
+            "DELAY[1]",
+            "DELAY[2]",
+            "DELAY[3]",
+            "DELAY[4]",
+            "DELAY[5]",
+            "DELAY[6]",
+            "DELAY[7]",
+            "DELAY[8]",
+            "DELAY[9]",
+            "DELAY[10]",
+            "DELAY[11]",
+            "DELAY[12]",
+            "DELAY[13]",
+            "DELAY[14]",
+            "DELAY[15]",
+            "DELAY[16]",
+            "DELAY[17]",
+            "DELAY[18]",
+            "DELAY[19]",
+            "DELAY[20]",
+            "DELAY[21]",
+            "DELAY[22]",
+            "DELAY[23]"
+          ]
+        },
+        {
+          "name": "ZERO",
+          "direction": "output",
+          "nets": [
+            "ZERO"
+          ]
+        },
+        {
+          "name": "CLK_I",
+          "direction": "input",
+          "nets": [
+            "CLK_I"
+          ]
+        },
+        {
+          "name": "RST_ASYNC_I",
+          "direction": "input",
+          "nets": [
+            "RST_ASYNC_I"
+          ]
+        },
+        {
+          "name": "RELOAD",
+          "direction": "input",
+          "nets": [
+            "RELOAD"
+          ]
+        },
+        {
+          "name": "CLK_REQ",
+          "direction": "output",
+          "nets": [
+            "CLK_REQ"
+          ]
+        }
+      ],
+      "wires": [
+        {
+          "name": "CLK_I",
+          "nets": [
+            "CLK_I"
+          ]
+        },
+        {
+          "name": "CLK_REQ",
+          "nets": [
+            "CLK_REQ"
+          ]
+        },
+        {
+          "name": "DELAY",
+          "nets": [
+            "DELAY[0]",
+            "DELAY[1]",
+            "DELAY[2]",
+            "DELAY[3]",
+            "DELAY[4]",
+            "DELAY[5]",
+            "DELAY[6]",
+            "DELAY[7]",
+            "DELAY[8]",
+            "DELAY[9]",
+            "DELAY[10]",
+            "DELAY[11]",
+            "DELAY[12]",
+            "DELAY[13]",
+            "DELAY[14]",
+            "DELAY[15]",
+            "DELAY[16]",
+            "DELAY[17]",
+            "DELAY[18]",
+            "DELAY[19]",
+            "DELAY[20]",
+            "DELAY[21]",
+            "DELAY[22]",
+            "DELAY[23]"
+          ]
+        },
+        {
+          "name": "RELOAD",
+          "nets": [
+            "RELOAD"
+          ]
+        },
+        {
+          "name": "RST_ASYNC_I",
+          "nets": [
+            "RST_ASYNC_I"
+          ]
+        },
+        {
+          "name": "ZERO",
+          "nets": [
+            "ZERO"
+          ]
+        },
+        {
+          "name": "_000_",
+          "nets": [
+            "_000_"
+          ]
+        },
+        {
+          "name": "_001_",
+          "nets": [
+            "_001_"
+          ]
+        },
+        {
+          "name": "_002_",
+          "nets": [
+            "_002_"
+          ]
+        },
+        {
+          "name": "_003_",
+          "nets": [
+            "_003_"
+          ]
+        },
+        {
+          "name": "_004_",
+          "nets": [
+            "_004_"
+          ]
+        },
+        {
+          "name": "_005_",
+          "nets": [
+            "_005_"
+          ]
+        },
+        {
+          "name": "_006_",
+          "nets": [
+            "_006_"
+          ]
+        },
+        {
+          "name": "_007_",
+          "nets": [
+            "_007_"
+          ]
+        },
+        {
+          "name": "_008_",
+          "nets": [
+            "_008_"
+          ]
+        },
+        {
+          "name": "_009_",
+          "nets": [
+            "_009_"
+          ]
+        },
+        {
+          "name": "_010_",
+          "nets": [
+            "_010_"
+          ]
+        },
+        {
+          "name": "_011_",
+          "nets": [
+            "_011_"
+          ]
+        },
+        {
+          "name": "_012_",
+          "nets": [
+            "_012_"
+          ]
+        },
+        {
+          "name": "_013_",
+          "nets": [
+            "_013_"
+          ]
+        },
+        {
+          "name": "_014_",
+          "nets": [
+            "_014_"
+          ]
+        },
+        {
+          "name": "_015_",
+          "nets": [
+            "_015_"
+          ]
+        },
+        {
+          "name": "_016_",
+          "nets": [
+            "_016_"
+          ]
+        },
+        {
+          "name": "_017_",
+          "nets": [
+            "_017_"
+          ]
+        },
+        {
+          "name": "_018_",
+          "nets": [
+            "_018_"
+          ]
+        },
+        {
+          "name": "_019_",
+          "nets": [
+            "_019_"
+          ]
+        },
+        {
+          "name": "_020_",
+          "nets": [
+            "_020_"
+          ]
+        },
+        {
+          "name": "_021_",
+          "nets": [
+            "_021_"
+          ]
+        },
+        {
+          "name": "_022_",
+          "nets": [
+            "_022_"
+          ]
+        },
+        {
+          "name": "_023_",
+          "nets": [
+            "_023_"
+          ]
+        },
+        {
+          "name": "_024_",
+          "nets": [
+            "_024_"
+          ]
+        },
+        {
+          "name": "_025_",
+          "nets": [
+            "_025_"
+          ]
+        },
+        {
+          "name": "_026_",
+          "nets": [
+            "_026_"
+          ]
+        },
+        {
+          "name": "_027_",
+          "nets": [
+            "_027_"
+          ]
+        },
+        {
+          "name": "_028_",
+          "nets": [
+            "_028_"
+          ]
+        },
+        {
+          "name": "_029_",
+          "nets": [
+            "_029_"
+          ]
+        },
+        {
+          "name": "_030_",
+          "nets": [
+            "_030_"
+          ]
+        },
+        {
+          "name": "_031_",
+          "nets": [
+            "_031_"
+          ]
+        },
+        {
+          "name": "_032_",
+          "nets": [
+            "_032_"
+          ]
+        },
+        {
+          "name": "_033_",
+          "nets": [
+            "_033_"
+          ]
+        },
+        {
+          "name": "_034_",
+          "nets": [
+            "_034_"
+          ]
+        },
+        {
+          "name": "_035_",
+          "nets": [
+            "_035_"
+          ]
+        },
+        {
+          "name": "_036_",
+          "nets": [
+            "_036_"
+          ]
+        },
+        {
+          "name": "_037_",
+          "nets": [
+            "_037_"
+          ]
+        },
+        {
+          "name": "_038_",
+          "nets": [
+            "_038_"
+          ]
+        },
+        {
+          "name": "_039_",
+          "nets": [
+            "_039_"
+          ]
+        },
+        {
+          "name": "_040_",
+          "nets": [
+            "_040_"
+          ]
+        },
+        {
+          "name": "_041_",
+          "nets": [
+            "_041_"
+          ]
+        },
+        {
+          "name": "_042_",
+          "nets": [
+            "_042_"
+          ]
+        },
+        {
+          "name": "_043_",
+          "nets": [
+            "_043_"
+          ]
+        },
+        {
+          "name": "_044_",
+          "nets": [
+            "_044_"
+          ]
+        },
+        {
+          "name": "_045_",
+          "nets": [
+            "_045_"
+          ]
+        },
+        {
+          "name": "_046_",
+          "nets": [
+            "_046_"
+          ]
+        },
+        {
+          "name": "_047_",
+          "nets": [
+            "_047_"
+          ]
+        },
+        {
+          "name": "_048_",
+          "nets": [
+            "_048_"
+          ]
+        },
+        {
+          "name": "_049_",
+          "nets": [
+            "_049_"
+          ]
+        },
+        {
+          "name": "_050_",
+          "nets": [
+            "_050_"
+          ]
+        },
+        {
+          "name": "_051_",
+          "nets": [
+            "_051_"
+          ]
+        },
+        {
+          "name": "_052_",
+          "nets": [
+            "_052_"
+          ]
+        },
+        {
+          "name": "_053_",
+          "nets": [
+            "_053_"
+          ]
+        },
+        {
+          "name": "_054_",
+          "nets": [
+            "_054_"
+          ]
+        },
+        {
+          "name": "_055_",
+          "nets": [
+            "_055_"
+          ]
+        },
+        {
+          "name": "_056_",
+          "nets": [
+            "_056_"
+          ]
+        },
+        {
+          "name": "_057_",
+          "nets": [
+            "_057_"
+          ]
+        },
+        {
+          "name": "_058_",
+          "nets": [
+            "_058_"
+          ]
+        },
+        {
+          "name": "_059_",
+          "nets": [
+            "_059_"
+          ]
+        },
+        {
+          "name": "_060_",
+          "nets": [
+            "_060_"
+          ]
+        },
+        {
+          "name": "_061_",
+          "nets": [
+            "_061_"
+          ]
+        },
+        {
+          "name": "_062_",
+          "nets": [
+            "_062_"
+          ]
+        },
+        {
+          "name": "_063_",
+          "nets": [
+            "_063_"
+          ]
+        },
+        {
+          "name": "_064_",
+          "nets": [
+            "_064_"
+          ]
+        },
+        {
+          "name": "_065_",
+          "nets": [
+            "_065_"
+          ]
+        },
+        {
+          "name": "_066_",
+          "nets": [
+            "_066_"
+          ]
+        },
+        {
+          "name": "_067_",
+          "nets": [
+            "_067_"
+          ]
+        },
+        {
+          "name": "_068_",
+          "nets": [
+            "_068_"
+          ]
+        },
+        {
+          "name": "_069_",
+          "nets": [
+            "_069_"
+          ]
+        },
+        {
+          "name": "_070_",
+          "nets": [
+            "_070_"
+          ]
+        },
+        {
+          "name": "_071_",
+          "nets": [
+            "_071_"
+          ]
+        },
+        {
+          "name": "_072_",
+          "nets": [
+            "_072_"
+          ]
+        },
+        {
+          "name": "_073_",
+          "nets": [
+            "_073_"
+          ]
+        },
+        {
+          "name": "_074_",
+          "nets": [
+            "_074_"
+          ]
+        },
+        {
+          "name": "_075_",
+          "nets": [
+            "_075_"
+          ]
+        },
+        {
+          "name": "_076_",
+          "nets": [
+            "_076_"
+          ]
+        },
+        {
+          "name": "_077_",
+          "nets": [
+            "_077_"
+          ]
+        },
+        {
+          "name": "_078_",
+          "nets": [
+            "_078_"
+          ]
+        },
+        {
+          "name": "_079_",
+          "nets": [
+            "_079_"
+          ]
+        },
+        {
+          "name": "_080_",
+          "nets": [
+            "_080_"
+          ]
+        },
+        {
+          "name": "_081_",
+          "nets": [
+            "_081_"
+          ]
+        },
+        {
+          "name": "_082_",
+          "nets": [
+            "_082_"
+          ]
+        },
+        {
+          "name": "_083_",
+          "nets": [
+            "_083_"
+          ]
+        },
+        {
+          "name": "_084_",
+          "nets": [
+            "_084_"
+          ]
+        },
+        {
+          "name": "_085_",
+          "nets": [
+            "_085_"
+          ]
+        },
+        {
+          "name": "_086_",
+          "nets": [
+            "_086_"
+          ]
+        },
+        {
+          "name": "_087_",
+          "nets": [
+            "_087_"
+          ]
+        },
+        {
+          "name": "_088_",
+          "nets": [
+            "_088_"
+          ]
+        },
+        {
+          "name": "_089_",
+          "nets": [
+            "_089_"
+          ]
+        },
+        {
+          "name": "_090_",
+          "nets": [
+            "_090_"
+          ]
+        },
+        {
+          "name": "_091_",
+          "nets": [
+            "_091_"
+          ]
+        },
+        {
+          "name": "_092_",
+          "nets": [
+            "_092_"
+          ]
+        },
+        {
+          "name": "_093_",
+          "nets": [
+            "_093_"
+          ]
+        },
+        {
+          "name": "_094_",
+          "nets": [
+            "_094_"
+          ]
+        },
+        {
+          "name": "_095_",
+          "nets": [
+            "_095_"
+          ]
+        },
+        {
+          "name": "_096_",
+          "nets": [
+            "_096_"
+          ]
+        },
+        {
+          "name": "_097_",
+          "nets": [
+            "_097_"
+          ]
+        },
+        {
+          "name": "_098_",
+          "nets": [
+            "_098_"
+          ]
+        },
+        {
+          "name": "_099_",
+          "nets": [
+            "_099_"
+          ]
+        },
+        {
+          "name": "_100_",
+          "nets": [
+            "_100_"
+          ]
+        },
+        {
+          "name": "_101_",
+          "nets": [
+            "_101_"
+          ]
+        },
+        {
+          "name": "_102_",
+          "nets": [
+            "_102_"
+          ]
+        },
+        {
+          "name": "_103_",
+          "nets": [
+            "_103_"
+          ]
+        },
+        {
+          "name": "_104_",
+          "nets": [
+            "_104_"
+          ]
+        },
+        {
+          "name": "_105_",
+          "nets": [
+            "_105_"
+          ]
+        },
+        {
+          "name": "_106_",
+          "nets": [
+            "_106_"
+          ]
+        },
+        {
+          "name": "_107_",
+          "nets": [
+            "_107_"
+          ]
+        },
+        {
+          "name": "_108_",
+          "nets": [
+            "_108_"
+          ]
+        },
+        {
+          "name": "_109_",
+          "nets": [
+            "_109_"
+          ]
+        },
+        {
+          "name": "_110_",
+          "nets": [
+            "_110_"
+          ]
+        },
+        {
+          "name": "_111_",
+          "nets": [
+            "_111_"
+          ]
+        },
+        {
+          "name": "_112_",
+          "nets": [
+            "_112_"
+          ]
+        },
+        {
+          "name": "_113_",
+          "nets": [
+            "_113_"
+          ]
+        },
+        {
+          "name": "_114_",
+          "nets": [
+            "_114_"
+          ]
+        },
+        {
+          "name": "_115_",
+          "nets": [
+            "_115_"
+          ]
+        },
+        {
+          "name": "_116_",
+          "nets": [
+            "_116_"
+          ]
+        },
+        {
+          "name": "_117_",
+          "nets": [
+            "_117_"
+          ]
+        },
+        {
+          "name": "_118_",
+          "nets": [
+            "_118_"
+          ]
+        },
+        {
+          "name": "_119_",
+          "nets": [
+            "_119_"
+          ]
+        },
+        {
+          "name": "_120_",
+          "nets": [
+            "_120_"
+          ]
+        },
+        {
+          "name": "_121_",
+          "nets": [
+            "_121_"
+          ]
+        },
+        {
+          "name": "_122_",
+          "nets": [
+            "_122_"
+          ]
+        },
+        {
+          "name": "_123_",
+          "nets": [
+            "_123_"
+          ]
+        },
+        {
+          "name": "_124_",
+          "nets": [
+            "_124_"
+          ]
+        },
+        {
+          "name": "_125_",
+          "nets": [
+            "_125_"
+          ]
+        },
+        {
+          "name": "_126_",
+          "nets": [
+            "_126_"
+          ]
+        },
+        {
+          "name": "_127_",
+          "nets": [
+            "_127_"
+          ]
+        },
+        {
+          "name": "_128_",
+          "nets": [
+            "_128_"
+          ]
+        },
+        {
+          "name": "_129_",
+          "nets": [
+            "_129_"
+          ]
+        },
+        {
+          "name": "_130_",
+          "nets": [
+            "_130_"
+          ]
+        },
+        {
+          "name": "_131_",
+          "nets": [
+            "_131_"
+          ]
+        },
+        {
+          "name": "_132_",
+          "nets": [
+            "_132_"
+          ]
+        },
+        {
+          "name": "_133_",
+          "nets": [
+            "_133_"
+          ]
+        },
+        {
+          "name": "_134_",
+          "nets": [
+            "_134_"
+          ]
+        },
+        {
+          "name": "_135_",
+          "nets": [
+            "_135_"
+          ]
+        },
+        {
+          "name": "_136_",
+          "nets": [
+            "_136_"
+          ]
+        },
+        {
+          "name": "_137_",
+          "nets": [
+            "_137_"
+          ]
+        },
+        {
+          "name": "_138_",
+          "nets": [
+            "_138_"
+          ]
+        },
+        {
+          "name": "_139_",
+          "nets": [
+            "_139_"
+          ]
+        },
+        {
+          "name": "_140_",
+          "nets": [
+            "_140_"
+          ]
+        },
+        {
+          "name": "_141_",
+          "nets": [
+            "_141_"
+          ]
+        },
+        {
+          "name": "_142_",
+          "nets": [
+            "_142_"
+          ]
+        },
+        {
+          "name": "_143_",
+          "nets": [
+            "_143_"
+          ]
+        },
+        {
+          "name": "_144_",
+          "nets": [
+            "_144_"
+          ]
+        },
+        {
+          "name": "_145_",
+          "nets": [
+            "_145_"
+          ]
+        },
+        {
+          "name": "counter",
+          "nets": [
+            "counter[0]",
+            "counter[1]",
+            "counter[2]",
+            "counter[3]",
+            "counter[4]",
+            "counter[5]",
+            "counter[6]",
+            "counter[7]",
+            "counter[8]",
+            "counter[9]",
+            "counter[10]",
+            "counter[11]",
+            "counter[12]",
+            "counter[13]",
+            "counter[14]",
+            "counter[15]",
+            "counter[16]",
+            "counter[17]",
+            "counter[18]",
+            "counter[19]",
+            "counter[20]",
+            "counter[21]",
+            "counter[22]",
+            "counter[23]"
+          ]
+        }
+      ],
+      "instances": [
+        {
+          "name": "_146_",
+          "type": "$_NOT_",
+          "connections": {
+            "A": [
+              "DELAY[1]"
+            ],
+            "Y": [
+              "_123_"
+            ]
+          }
+        },
+        {
+          "name": "_147_",
+          "type": "$_NOT_",
+          "connections": {
+            "A": [
+              "counter[0]"
+            ],
+            "Y": [
+              "_124_"
+            ]
+          }
+        },
+        {
+          "name": "_148_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[2]"
+            ],
+            "B": [
+              "DELAY[1]"
+            ],
+            "Y": [
+              "_125_"
+            ]
+          }
+        },
+        {
+          "name": "_149_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[3]"
+            ],
+            "B": [
+              "_125_"
+            ],
+            "Y": [
+              "_126_"
+            ]
+          }
+        },
+        {
+          "name": "_150_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[4]"
+            ],
+            "B": [
+              "_126_"
+            ],
+            "Y": [
+              "_127_"
+            ]
+          }
+        },
+        {
+          "name": "_151_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[5]"
+            ],
+            "B": [
+              "_127_"
+            ],
+            "Y": [
+              "_128_"
+            ]
+          }
+        },
+        {
+          "name": "_152_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[6]"
+            ],
+            "B": [
+              "DELAY[5]"
+            ],
+            "Y": [
+              "_129_"
+            ]
+          }
+        },
+        {
+          "name": "_153_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_129_"
+            ],
+            "B": [
+              "DELAY[4]"
+            ],
+            "Y": [
+              "_130_"
+            ]
+          }
+        },
+        {
+          "name": "_154_",
+          "type": "$_ORNOT_",
+          "connections": {
+            "A": [
+              "_126_"
+            ],
+            "B": [
+              "_130_"
+            ],
+            "Y": [
+              "_131_"
+            ]
+          }
+        },
+        {
+          "name": "_155_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[7]"
+            ],
+            "B": [
+              "_131_"
+            ],
+            "Y": [
+              "_132_"
+            ]
+          }
+        },
+        {
+          "name": "_156_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[8]"
+            ],
+            "B": [
+              "_132_"
+            ],
+            "Y": [
+              "_133_"
+            ]
+          }
+        },
+        {
+          "name": "_157_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[9]"
+            ],
+            "B": [
+              "_133_"
+            ],
+            "Y": [
+              "_134_"
+            ]
+          }
+        },
+        {
+          "name": "_158_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[10]"
+            ],
+            "B": [
+              "_134_"
+            ],
+            "Y": [
+              "_135_"
+            ]
+          }
+        },
+        {
+          "name": "_159_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[11]"
+            ],
+            "B": [
+              "DELAY[12]"
+            ],
+            "Y": [
+              "_136_"
+            ]
+          }
+        },
+        {
+          "name": "_160_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[10]"
+            ],
+            "B": [
+              "DELAY[13]"
+            ],
+            "Y": [
+              "_137_"
+            ]
+          }
+        },
+        {
+          "name": "_161_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_136_"
+            ],
+            "B": [
+              "_137_"
+            ],
+            "Y": [
+              "_138_"
+            ]
+          }
+        },
+        {
+          "name": "_162_",
+          "type": "$_ORNOT_",
+          "connections": {
+            "A": [
+              "_134_"
+            ],
+            "B": [
+              "_138_"
+            ],
+            "Y": [
+              "_139_"
+            ]
+          }
+        },
+        {
+          "name": "_163_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[14]"
+            ],
+            "B": [
+              "_139_"
+            ],
+            "Y": [
+              "_140_"
+            ]
+          }
+        },
+        {
+          "name": "_164_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[15]"
+            ],
+            "B": [
+              "_140_"
+            ],
+            "Y": [
+              "_141_"
+            ]
+          }
+        },
+        {
+          "name": "_165_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[16]"
+            ],
+            "B": [
+              "_141_"
+            ],
+            "Y": [
+              "_142_"
+            ]
+          }
+        },
+        {
+          "name": "_166_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[17]"
+            ],
+            "B": [
+              "_142_"
+            ],
+            "Y": [
+              "_143_"
+            ]
+          }
+        },
+        {
+          "name": "_167_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[18]"
+            ],
+            "B": [
+              "_143_"
+            ],
+            "Y": [
+              "_144_"
+            ]
+          }
+        },
+        {
+          "name": "_168_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[19]"
+            ],
+            "B": [
+              "_144_"
+            ],
+            "Y": [
+              "_145_"
+            ]
+          }
+        },
+        {
+          "name": "_169_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[20]"
+            ],
+            "B": [
+              "_145_"
+            ],
+            "Y": [
+              "_025_"
+            ]
+          }
+        },
+        {
+          "name": "_170_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[21]"
+            ],
+            "B": [
+              "_025_"
+            ],
+            "Y": [
+              "_026_"
+            ]
+          }
+        },
+        {
+          "name": "_171_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[22]"
+            ],
+            "B": [
+              "_026_"
+            ],
+            "Y": [
+              "_027_"
+            ]
+          }
+        },
+        {
+          "name": "_172_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[22]"
+            ],
+            "B": [
+              "_026_"
+            ],
+            "Y": [
+              "_028_"
+            ]
+          }
+        },
+        {
+          "name": "_173_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[1]"
+            ],
+            "B": [
+              "counter[0]"
+            ],
+            "Y": [
+              "_029_"
+            ]
+          }
+        },
+        {
+          "name": "_174_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[2]"
+            ],
+            "B": [
+              "_029_"
+            ],
+            "Y": [
+              "_030_"
+            ]
+          }
+        },
+        {
+          "name": "_175_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[3]"
+            ],
+            "B": [
+              "_030_"
+            ],
+            "Y": [
+              "_031_"
+            ]
+          }
+        },
+        {
+          "name": "_176_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[4]"
+            ],
+            "B": [
+              "_031_"
+            ],
+            "Y": [
+              "_032_"
+            ]
+          }
+        },
+        {
+          "name": "_177_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[5]"
+            ],
+            "B": [
+              "_032_"
+            ],
+            "Y": [
+              "_033_"
+            ]
+          }
+        },
+        {
+          "name": "_178_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[6]"
+            ],
+            "B": [
+              "_033_"
+            ],
+            "Y": [
+              "_034_"
+            ]
+          }
+        },
+        {
+          "name": "_179_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[7]"
+            ],
+            "B": [
+              "_034_"
+            ],
+            "Y": [
+              "_035_"
+            ]
+          }
+        },
+        {
+          "name": "_180_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[8]"
+            ],
+            "B": [
+              "_035_"
+            ],
+            "Y": [
+              "_036_"
+            ]
+          }
+        },
+        {
+          "name": "_181_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[9]"
+            ],
+            "B": [
+              "_036_"
+            ],
+            "Y": [
+              "_037_"
+            ]
+          }
+        },
+        {
+          "name": "_182_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[10]"
+            ],
+            "B": [
+              "_037_"
+            ],
+            "Y": [
+              "_038_"
+            ]
+          }
+        },
+        {
+          "name": "_183_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[11]"
+            ],
+            "B": [
+              "_038_"
+            ],
+            "Y": [
+              "_039_"
+            ]
+          }
+        },
+        {
+          "name": "_184_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[12]"
+            ],
+            "B": [
+              "_039_"
+            ],
+            "Y": [
+              "_040_"
+            ]
+          }
+        },
+        {
+          "name": "_185_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[13]"
+            ],
+            "B": [
+              "_040_"
+            ],
+            "Y": [
+              "_041_"
+            ]
+          }
+        },
+        {
+          "name": "_186_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[14]"
+            ],
+            "B": [
+              "_041_"
+            ],
+            "Y": [
+              "_042_"
+            ]
+          }
+        },
+        {
+          "name": "_187_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[15]"
+            ],
+            "B": [
+              "_042_"
+            ],
+            "Y": [
+              "_043_"
+            ]
+          }
+        },
+        {
+          "name": "_188_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[16]"
+            ],
+            "B": [
+              "_043_"
+            ],
+            "Y": [
+              "_044_"
+            ]
+          }
+        },
+        {
+          "name": "_189_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[17]"
+            ],
+            "B": [
+              "_044_"
+            ],
+            "Y": [
+              "_045_"
+            ]
+          }
+        },
+        {
+          "name": "_190_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[18]"
+            ],
+            "B": [
+              "_045_"
+            ],
+            "Y": [
+              "_046_"
+            ]
+          }
+        },
+        {
+          "name": "_191_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[19]"
+            ],
+            "B": [
+              "_046_"
+            ],
+            "Y": [
+              "_047_"
+            ]
+          }
+        },
+        {
+          "name": "_192_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[20]"
+            ],
+            "B": [
+              "_047_"
+            ],
+            "Y": [
+              "_048_"
+            ]
+          }
+        },
+        {
+          "name": "_193_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "counter[21]"
+            ],
+            "B": [
+              "_048_"
+            ],
+            "Y": [
+              "_049_"
+            ]
+          }
+        },
+        {
+          "name": "_194_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "counter[22]"
+            ],
+            "B": [
+              "_049_"
+            ],
+            "Y": [
+              "_050_"
+            ]
+          }
+        },
+        {
+          "name": "_195_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[22]"
+            ],
+            "B": [
+              "_049_"
+            ],
+            "Y": [
+              "_051_"
+            ]
+          }
+        },
+        {
+          "name": "_196_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_051_"
+            ],
+            "B": [
+              "_028_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_015_"
+            ]
+          }
+        },
+        {
+          "name": "_197_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[21]"
+            ],
+            "B": [
+              "_025_"
+            ],
+            "Y": [
+              "_052_"
+            ]
+          }
+        },
+        {
+          "name": "_198_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[21]"
+            ],
+            "B": [
+              "_048_"
+            ],
+            "Y": [
+              "_053_"
+            ]
+          }
+        },
+        {
+          "name": "_199_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_053_"
+            ],
+            "B": [
+              "_052_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_014_"
+            ]
+          }
+        },
+        {
+          "name": "_200_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[20]"
+            ],
+            "B": [
+              "_145_"
+            ],
+            "Y": [
+              "_054_"
+            ]
+          }
+        },
+        {
+          "name": "_201_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[20]"
+            ],
+            "B": [
+              "_047_"
+            ],
+            "Y": [
+              "_055_"
+            ]
+          }
+        },
+        {
+          "name": "_202_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_055_"
+            ],
+            "B": [
+              "_054_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_013_"
+            ]
+          }
+        },
+        {
+          "name": "_203_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[19]"
+            ],
+            "B": [
+              "_144_"
+            ],
+            "Y": [
+              "_056_"
+            ]
+          }
+        },
+        {
+          "name": "_204_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[19]"
+            ],
+            "B": [
+              "_046_"
+            ],
+            "Y": [
+              "_057_"
+            ]
+          }
+        },
+        {
+          "name": "_205_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_057_"
+            ],
+            "B": [
+              "_056_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_011_"
+            ]
+          }
+        },
+        {
+          "name": "_206_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[18]"
+            ],
+            "B": [
+              "_143_"
+            ],
+            "Y": [
+              "_058_"
+            ]
+          }
+        },
+        {
+          "name": "_207_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[18]"
+            ],
+            "B": [
+              "_045_"
+            ],
+            "Y": [
+              "_059_"
+            ]
+          }
+        },
+        {
+          "name": "_208_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_059_"
+            ],
+            "B": [
+              "_058_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_010_"
+            ]
+          }
+        },
+        {
+          "name": "_209_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[17]"
+            ],
+            "B": [
+              "_142_"
+            ],
+            "Y": [
+              "_060_"
+            ]
+          }
+        },
+        {
+          "name": "_210_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[17]"
+            ],
+            "B": [
+              "_044_"
+            ],
+            "Y": [
+              "_061_"
+            ]
+          }
+        },
+        {
+          "name": "_211_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_061_"
+            ],
+            "B": [
+              "_060_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_009_"
+            ]
+          }
+        },
+        {
+          "name": "_212_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[16]"
+            ],
+            "B": [
+              "_141_"
+            ],
+            "Y": [
+              "_062_"
+            ]
+          }
+        },
+        {
+          "name": "_213_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[16]"
+            ],
+            "B": [
+              "_043_"
+            ],
+            "Y": [
+              "_063_"
+            ]
+          }
+        },
+        {
+          "name": "_214_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_063_"
+            ],
+            "B": [
+              "_062_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_008_"
+            ]
+          }
+        },
+        {
+          "name": "_215_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[15]"
+            ],
+            "B": [
+              "_140_"
+            ],
+            "Y": [
+              "_064_"
+            ]
+          }
+        },
+        {
+          "name": "_216_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[15]"
+            ],
+            "B": [
+              "_042_"
+            ],
+            "Y": [
+              "_065_"
+            ]
+          }
+        },
+        {
+          "name": "_217_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_065_"
+            ],
+            "B": [
+              "_064_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_007_"
+            ]
+          }
+        },
+        {
+          "name": "_218_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[14]"
+            ],
+            "B": [
+              "_139_"
+            ],
+            "Y": [
+              "_066_"
+            ]
+          }
+        },
+        {
+          "name": "_219_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[14]"
+            ],
+            "B": [
+              "_041_"
+            ],
+            "Y": [
+              "_067_"
+            ]
+          }
+        },
+        {
+          "name": "_220_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_067_"
+            ],
+            "B": [
+              "_066_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_006_"
+            ]
+          }
+        },
+        {
+          "name": "_221_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "DELAY[11]"
+            ],
+            "B": [
+              "_135_"
+            ],
+            "Y": [
+              "_068_"
+            ]
+          }
+        },
+        {
+          "name": "_222_",
+          "type": "$_ORNOT_",
+          "connections": {
+            "A": [
+              "_135_"
+            ],
+            "B": [
+              "_136_"
+            ],
+            "Y": [
+              "_069_"
+            ]
+          }
+        },
+        {
+          "name": "_223_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "DELAY[13]"
+            ],
+            "B": [
+              "_069_"
+            ],
+            "Y": [
+              "_070_"
+            ]
+          }
+        },
+        {
+          "name": "_224_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_139_"
+            ],
+            "B": [
+              "_070_"
+            ],
+            "Y": [
+              "_071_"
+            ]
+          }
+        },
+        {
+          "name": "_225_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[13]"
+            ],
+            "B": [
+              "_040_"
+            ],
+            "Y": [
+              "_072_"
+            ]
+          }
+        },
+        {
+          "name": "_226_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_072_"
+            ],
+            "B": [
+              "_071_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_005_"
+            ]
+          }
+        },
+        {
+          "name": "_227_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[12]"
+            ],
+            "B": [
+              "_068_"
+            ],
+            "Y": [
+              "_073_"
+            ]
+          }
+        },
+        {
+          "name": "_228_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[12]"
+            ],
+            "B": [
+              "_039_"
+            ],
+            "Y": [
+              "_074_"
+            ]
+          }
+        },
+        {
+          "name": "_229_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_074_"
+            ],
+            "B": [
+              "_073_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_004_"
+            ]
+          }
+        },
+        {
+          "name": "_230_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[11]"
+            ],
+            "B": [
+              "_135_"
+            ],
+            "Y": [
+              "_075_"
+            ]
+          }
+        },
+        {
+          "name": "_231_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[11]"
+            ],
+            "B": [
+              "_038_"
+            ],
+            "Y": [
+              "_076_"
+            ]
+          }
+        },
+        {
+          "name": "_232_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_076_"
+            ],
+            "B": [
+              "_075_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_003_"
+            ]
+          }
+        },
+        {
+          "name": "_233_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[10]"
+            ],
+            "B": [
+              "_134_"
+            ],
+            "Y": [
+              "_077_"
+            ]
+          }
+        },
+        {
+          "name": "_234_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[10]"
+            ],
+            "B": [
+              "_037_"
+            ],
+            "Y": [
+              "_078_"
+            ]
+          }
+        },
+        {
+          "name": "_235_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_078_"
+            ],
+            "B": [
+              "_077_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_002_"
+            ]
+          }
+        },
+        {
+          "name": "_236_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[9]"
+            ],
+            "B": [
+              "_133_"
+            ],
+            "Y": [
+              "_079_"
+            ]
+          }
+        },
+        {
+          "name": "_237_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[9]"
+            ],
+            "B": [
+              "_036_"
+            ],
+            "Y": [
+              "_080_"
+            ]
+          }
+        },
+        {
+          "name": "_238_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_080_"
+            ],
+            "B": [
+              "_079_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_024_"
+            ]
+          }
+        },
+        {
+          "name": "_239_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[8]"
+            ],
+            "B": [
+              "_132_"
+            ],
+            "Y": [
+              "_081_"
+            ]
+          }
+        },
+        {
+          "name": "_240_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[8]"
+            ],
+            "B": [
+              "_035_"
+            ],
+            "Y": [
+              "_082_"
+            ]
+          }
+        },
+        {
+          "name": "_241_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_082_"
+            ],
+            "B": [
+              "_081_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_023_"
+            ]
+          }
+        },
+        {
+          "name": "_242_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[7]"
+            ],
+            "B": [
+              "_131_"
+            ],
+            "Y": [
+              "_083_"
+            ]
+          }
+        },
+        {
+          "name": "_243_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[7]"
+            ],
+            "B": [
+              "_034_"
+            ],
+            "Y": [
+              "_084_"
+            ]
+          }
+        },
+        {
+          "name": "_244_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_084_"
+            ],
+            "B": [
+              "_083_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_022_"
+            ]
+          }
+        },
+        {
+          "name": "_245_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[6]"
+            ],
+            "B": [
+              "_128_"
+            ],
+            "Y": [
+              "_085_"
+            ]
+          }
+        },
+        {
+          "name": "_246_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[6]"
+            ],
+            "B": [
+              "_033_"
+            ],
+            "Y": [
+              "_086_"
+            ]
+          }
+        },
+        {
+          "name": "_247_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_086_"
+            ],
+            "B": [
+              "_085_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_021_"
+            ]
+          }
+        },
+        {
+          "name": "_248_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[5]"
+            ],
+            "B": [
+              "_127_"
+            ],
+            "Y": [
+              "_087_"
+            ]
+          }
+        },
+        {
+          "name": "_249_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[5]"
+            ],
+            "B": [
+              "_032_"
+            ],
+            "Y": [
+              "_088_"
+            ]
+          }
+        },
+        {
+          "name": "_250_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_088_"
+            ],
+            "B": [
+              "_087_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_020_"
+            ]
+          }
+        },
+        {
+          "name": "_251_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[4]"
+            ],
+            "B": [
+              "_126_"
+            ],
+            "Y": [
+              "_089_"
+            ]
+          }
+        },
+        {
+          "name": "_252_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[4]"
+            ],
+            "B": [
+              "_031_"
+            ],
+            "Y": [
+              "_090_"
+            ]
+          }
+        },
+        {
+          "name": "_253_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_090_"
+            ],
+            "B": [
+              "_089_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_019_"
+            ]
+          }
+        },
+        {
+          "name": "_254_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[3]"
+            ],
+            "B": [
+              "_125_"
+            ],
+            "Y": [
+              "_091_"
+            ]
+          }
+        },
+        {
+          "name": "_255_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[3]"
+            ],
+            "B": [
+              "_030_"
+            ],
+            "Y": [
+              "_092_"
+            ]
+          }
+        },
+        {
+          "name": "_256_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_092_"
+            ],
+            "B": [
+              "_091_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_018_"
+            ]
+          }
+        },
+        {
+          "name": "_257_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "DELAY[1]"
+            ],
+            "B": [
+              "DELAY[2]"
+            ],
+            "Y": [
+              "_093_"
+            ]
+          }
+        },
+        {
+          "name": "_258_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[2]"
+            ],
+            "B": [
+              "DELAY[1]"
+            ],
+            "Y": [
+              "_094_"
+            ]
+          }
+        },
+        {
+          "name": "_259_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[2]"
+            ],
+            "B": [
+              "_029_"
+            ],
+            "Y": [
+              "_095_"
+            ]
+          }
+        },
+        {
+          "name": "_260_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_095_"
+            ],
+            "B": [
+              "_094_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_017_"
+            ]
+          }
+        },
+        {
+          "name": "_261_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "counter[1]"
+            ],
+            "B": [
+              "counter[0]"
+            ],
+            "Y": [
+              "_096_"
+            ]
+          }
+        },
+        {
+          "name": "_262_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_096_"
+            ],
+            "B": [
+              "_123_"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_012_"
+            ]
+          }
+        },
+        {
+          "name": "_263_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_124_"
+            ],
+            "B": [
+              "DELAY[0]"
+            ],
+            "S": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_001_"
+            ]
+          }
+        },
+        {
+          "name": "_264_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[20]"
+            ],
+            "B": [
+              "DELAY[21]"
+            ],
+            "Y": [
+              "_097_"
+            ]
+          }
+        },
+        {
+          "name": "_265_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[22]"
+            ],
+            "B": [
+              "DELAY[18]"
+            ],
+            "Y": [
+              "_098_"
+            ]
+          }
+        },
+        {
+          "name": "_266_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[14]"
+            ],
+            "B": [
+              "DELAY[19]"
+            ],
+            "Y": [
+              "_099_"
+            ]
+          }
+        },
+        {
+          "name": "_267_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[17]"
+            ],
+            "B": [
+              "DELAY[8]"
+            ],
+            "Y": [
+              "_100_"
+            ]
+          }
+        },
+        {
+          "name": "_268_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_098_"
+            ],
+            "B": [
+              "_100_"
+            ],
+            "Y": [
+              "_101_"
+            ]
+          }
+        },
+        {
+          "name": "_269_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "DELAY[16]"
+            ],
+            "B": [
+              "DELAY[15]"
+            ],
+            "Y": [
+              "_102_"
+            ]
+          }
+        },
+        {
+          "name": "_270_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_101_"
+            ],
+            "B": [
+              "_102_"
+            ],
+            "Y": [
+              "_103_"
+            ]
+          }
+        },
+        {
+          "name": "_271_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_099_"
+            ],
+            "B": [
+              "_103_"
+            ],
+            "Y": [
+              "_104_"
+            ]
+          }
+        },
+        {
+          "name": "_272_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_097_"
+            ],
+            "B": [
+              "DELAY[9]"
+            ],
+            "Y": [
+              "_105_"
+            ]
+          }
+        },
+        {
+          "name": "_273_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_105_"
+            ],
+            "B": [
+              "DELAY[23]"
+            ],
+            "Y": [
+              "_106_"
+            ]
+          }
+        },
+        {
+          "name": "_274_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_138_"
+            ],
+            "B": [
+              "_106_"
+            ],
+            "Y": [
+              "_107_"
+            ]
+          }
+        },
+        {
+          "name": "_275_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_104_"
+            ],
+            "B": [
+              "_107_"
+            ],
+            "Y": [
+              "_108_"
+            ]
+          }
+        },
+        {
+          "name": "_276_",
+          "type": "$_ORNOT_",
+          "connections": {
+            "A": [
+              "_132_"
+            ],
+            "B": [
+              "_108_"
+            ],
+            "Y": [
+              "_109_"
+            ]
+          }
+        },
+        {
+          "name": "_277_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_130_"
+            ],
+            "B": [
+              "DELAY[7]"
+            ],
+            "Y": [
+              "_110_"
+            ]
+          }
+        },
+        {
+          "name": "_278_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_093_"
+            ],
+            "B": [
+              "DELAY[0]"
+            ],
+            "Y": [
+              "_111_"
+            ]
+          }
+        },
+        {
+          "name": "_279_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "_111_"
+            ],
+            "B": [
+              "DELAY[3]"
+            ],
+            "Y": [
+              "_112_"
+            ]
+          }
+        },
+        {
+          "name": "_280_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_110_"
+            ],
+            "B": [
+              "_112_"
+            ],
+            "Y": [
+              "_113_"
+            ]
+          }
+        },
+        {
+          "name": "_281_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_108_"
+            ],
+            "B": [
+              "_113_"
+            ],
+            "Y": [
+              "_114_"
+            ]
+          }
+        },
+        {
+          "name": "_282_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_109_"
+            ],
+            "B": [
+              "_114_"
+            ],
+            "Y": [
+              "_115_"
+            ]
+          }
+        },
+        {
+          "name": "_283_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "RELOAD"
+            ],
+            "B": [
+              "_115_"
+            ],
+            "Y": [
+              "_116_"
+            ]
+          }
+        },
+        {
+          "name": "_284_",
+          "type": "$_NOR_",
+          "connections": {
+            "A": [
+              "RELOAD"
+            ],
+            "B": [
+              "counter[23]"
+            ],
+            "Y": [
+              "_117_"
+            ]
+          }
+        },
+        {
+          "name": "_285_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_050_"
+            ],
+            "B": [
+              "_117_"
+            ],
+            "Y": [
+              "CLK_REQ"
+            ]
+          }
+        },
+        {
+          "name": "_286_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "_116_"
+            ],
+            "B": [
+              "CLK_REQ"
+            ],
+            "Y": [
+              "_000_"
+            ]
+          }
+        },
+        {
+          "name": "_287_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "RELOAD"
+            ],
+            "B": [
+              "_109_"
+            ],
+            "Y": [
+              "_118_"
+            ]
+          }
+        },
+        {
+          "name": "_288_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "CLK_REQ"
+            ],
+            "B": [
+              "_118_"
+            ],
+            "Y": [
+              "ZERO"
+            ]
+          }
+        },
+        {
+          "name": "_289_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "counter[23]"
+            ],
+            "B": [
+              "RELOAD"
+            ],
+            "Y": [
+              "_119_"
+            ]
+          }
+        },
+        {
+          "name": "_290_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "DELAY[23]"
+            ],
+            "B": [
+              "_027_"
+            ],
+            "Y": [
+              "_120_"
+            ]
+          }
+        },
+        {
+          "name": "_291_",
+          "type": "$_AND_",
+          "connections": {
+            "A": [
+              "RELOAD"
+            ],
+            "B": [
+              "_120_"
+            ],
+            "Y": [
+              "_121_"
+            ]
+          }
+        },
+        {
+          "name": "_292_",
+          "type": "$_MUX_",
+          "connections": {
+            "A": [
+              "_119_"
+            ],
+            "B": [
+              "_117_"
+            ],
+            "S": [
+              "_050_"
+            ],
+            "Y": [
+              "_122_"
+            ]
+          }
+        },
+        {
+          "name": "_293_",
+          "type": "$_OR_",
+          "connections": {
+            "A": [
+              "_121_"
+            ],
+            "B": [
+              "_122_"
+            ],
+            "Y": [
+              "_016_"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[0]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_001_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[0]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[10]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_002_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[10]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[11]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_003_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[11]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[12]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_004_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[12]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[13]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_005_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[13]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[14]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_006_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[14]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[15]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_007_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[15]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[16]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_008_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[16]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[17]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_009_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[17]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[18]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_010_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[18]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[19]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_011_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[19]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[1]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_012_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[1]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[20]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_013_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[20]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[21]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_014_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[21]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[22]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_015_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[22]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[23]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_016_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[23]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[2]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_017_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[2]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[3]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_018_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[3]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[4]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_019_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[4]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[5]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_020_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[5]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[6]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_021_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[6]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[7]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_022_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[7]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[8]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_023_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[8]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "counter_reg[9]",
+          "type": "$_DFFE_PP0P_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "_024_"
+            ],
+            "E": [
+              "_000_"
+            ],
+            "Q": [
+              "counter[9]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "nortl_edge_detector$MrCoffee.I_EVENT_EDGE_DETECTOR_START",
+      "ports": [
+        {
+          "name": "CLK_I",
+          "direction": "input",
+          "nets": [
+            "CLK_I"
+          ]
+        },
+        {
+          "name": "RST_ASYNC_I",
+          "direction": "input",
+          "nets": [
+            "RST_ASYNC_I"
+          ]
+        },
+        {
+          "name": "SIGNAL",
+          "direction": "input",
+          "nets": [
+            "SIGNAL"
+          ]
+        },
+        {
+          "name": "RISING",
+          "direction": "output",
+          "nets": [
+            "RISING"
+          ]
+        },
+        {
+          "name": "FALLING",
+          "direction": "output",
+          "nets": [
+            "FALLING"
+          ]
+        },
+        {
+          "name": "CLK_REQ",
+          "direction": "output",
+          "nets": [
+            "CLK_REQ"
+          ]
+        }
+      ],
+      "wires": [
+        {
+          "name": "CLK_I",
+          "nets": [
+            "CLK_I"
+          ]
+        },
+        {
+          "name": "CLK_REQ",
+          "nets": [
+            "CLK_REQ"
+          ]
+        },
+        {
+          "name": "FALLING",
+          "nets": [
+            "FALLING"
+          ]
+        },
+        {
+          "name": "RISING",
+          "nets": [
+            "RISING"
+          ]
+        },
+        {
+          "name": "RST_ASYNC_I",
+          "nets": [
+            "RST_ASYNC_I"
+          ]
+        },
+        {
+          "name": "SIGNAL",
+          "nets": [
+            "SIGNAL"
+          ]
+        },
+        {
+          "name": "_0_",
+          "nets": [
+            "_0_"
+          ]
+        },
+        {
+          "name": "_1_",
+          "nets": [
+            "_1_"
+          ]
+        },
+        {
+          "name": "sr",
+          "nets": [
+            "sr[0]",
+            "sr[1]"
+          ]
+        }
+      ],
+      "instances": [
+        {
+          "name": "_2_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "sr[0]"
+            ],
+            "B": [
+              "sr[1]"
+            ],
+            "Y": [
+              "RISING"
+            ]
+          }
+        },
+        {
+          "name": "_3_",
+          "type": "$_ANDNOT_",
+          "connections": {
+            "A": [
+              "sr[1]"
+            ],
+            "B": [
+              "sr[0]"
+            ],
+            "Y": [
+              "FALLING"
+            ]
+          }
+        },
+        {
+          "name": "_4_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "sr[1]"
+            ],
+            "B": [
+              "sr[0]"
+            ],
+            "Y": [
+              "_1_"
+            ]
+          }
+        },
+        {
+          "name": "_5_",
+          "type": "$_XNOR_",
+          "connections": {
+            "A": [
+              "sr[0]"
+            ],
+            "B": [
+              "SIGNAL"
+            ],
+            "Y": [
+              "_0_"
+            ]
+          }
+        },
+        {
+          "name": "_6_",
+          "type": "$_NAND_",
+          "connections": {
+            "A": [
+              "_1_"
+            ],
+            "B": [
+              "_0_"
+            ],
+            "Y": [
+              "CLK_REQ"
+            ]
+          }
+        },
+        {
+          "name": "sr_reg[0]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "SIGNAL"
+            ],
+            "Q": [
+              "sr[0]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        },
+        {
+          "name": "sr_reg[1]",
+          "type": "$_DFF_PP0_",
+          "connections": {
+            "C": [
+              "CLK_I"
+            ],
+            "D": [
+              "sr[0]"
+            ],
+            "Q": [
+              "sr[1]"
+            ],
+            "R": [
+              "RST_ASYNC_I"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
