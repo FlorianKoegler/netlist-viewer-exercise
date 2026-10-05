@@ -2,7 +2,7 @@
 
 import { Outlet } from "react-router";
 import { Button } from "@/components/ui/button";
-import mrCoffee from "@/netlist/MrCoffee.json";
+import mrCoffee from "@/netlist/MrCoffee_flat.json";
 import { toggleTheme } from "@/utils";
 
 export function Layout() {

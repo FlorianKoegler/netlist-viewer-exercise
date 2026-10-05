@@ -21,7 +21,7 @@ However, it currently only draws two hardcoded instances and one wire, as shown 
 
 ![Initial State](assets/initial_state.png)
 
-The synthesized netlist is included as a JSON object in `src/netlist/MrCoffee.json`. The `graph.tsx` page already imports it, and esbuild burns the object into `app.js`, so you don't need to care about uploading the JSON.
+The synthesized netlist is included as a JSON object in `src/netlist/MrCoffee_flat.json`. The `graph.tsx` page already imports it, and esbuild burns the object into `app.js`, so you don't need to care about uploading the JSON.
 
 Your task is to replace the hardcoded graph with one based on the imported netlist.
 You will probably not need to touch any other files. You may move the graph processing into a new module, if you like.
