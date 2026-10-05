@@ -1,0 +1,281 @@
+{
+  "$defs": {
+    "Instance": {
+      "additionalProperties": false,
+      "description": "An instantiation of a design module or library cell.",
+      "properties": {
+        "name": {
+          "description": "Instance name.",
+          "title": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "Cell or module type. The name refers to either a module definition or library cell.\n\nThe type must be found in the netlists `modules` or `libraries` fields respectively.",
+          "examples": [
+            "$_AND_",
+            "nortl_count_down_timer$MrCoffee.I_TIMER_0"
+          ],
+          "title": "",
+          "type": "string"
+        },
+        "connections": {
+          "additionalProperties": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "description": "Mapping of pin/port names to the nets connected to that pin/port.\n\nEach list uses the same net names as `Port.nets`, one entry per bit, least\nsignificant bit first. A port that is left unconnected is absent.",
+          "examples": [
+            {
+              "A": [
+                "n4"
+              ],
+              "B": [
+                "const:0"
+              ],
+              "Y": [
+                "Y"
+              ]
+            }
+          ],
+          "title": "",
+          "type": "object"
+        },
+        "parameters": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Parameters of the instance. Not expected to occur in the netlist.\n    ",
+          "examples": [
+            {
+              "WIDTH": "8"
+            }
+          ],
+          "title": "",
+          "type": "object"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "connections"
+      ],
+      "title": "Instance",
+      "type": "object"
+    },
+    "Module": {
+      "additionalProperties": false,
+      "description": "Definition of design module.",
+      "properties": {
+        "name": {
+          "description": "Module name.",
+          "title": "",
+          "type": "string"
+        },
+        "ports": {
+          "description": "External ports, sorted by name.",
+          "items": {
+            "$ref": "#/$defs/Port"
+          },
+          "title": "",
+          "type": "array"
+        },
+        "wires": {
+          "description": "Internal wires, sorted by name.",
+          "items": {
+            "$ref": "#/$defs/Wire"
+          },
+          "title": "",
+          "type": "array"
+        },
+        "instances": {
+          "description": "List of library cell and module instances, sorted by name.",
+          "items": {
+            "$ref": "#/$defs/Instance"
+          },
+          "title": "",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "ports",
+        "wires",
+        "instances"
+      ],
+      "title": "Module",
+      "type": "object"
+    },
+    "Pin": {
+      "additionalProperties": false,
+      "description": "One pin of a library cell.\n\nCompared to ports, pins only have a single bit.",
+      "properties": {
+        "name": {
+          "description": "Pin name.",
+          "title": "",
+          "type": "string"
+        },
+        "direction": {
+          "description": "Pin direction.",
+          "enum": [
+            "input",
+            "output",
+            "inout"
+          ],
+          "title": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "direction"
+      ],
+      "title": "Pin",
+      "type": "object"
+    },
+    "Port": {
+      "additionalProperties": false,
+      "description": "A input, output or bidirectional port of a module.\n\nPorts pass signals into, or out of the module, e.g. the clock, data signals, etc.\nIn comparison, wires stay inside the module.\n\nPorts can have one or more bits, therefore they connect to a list of net names in `nets`.\nThe `nets` are sorted, with the least significant bit first.",
+      "properties": {
+        "name": {
+          "description": "Port name.",
+          "title": "",
+          "type": "string"
+        },
+        "direction": {
+          "description": "Port direction.",
+          "enum": [
+            "input",
+            "output",
+            "inout"
+          ],
+          "title": "",
+          "type": "string"
+        },
+        "nets": {
+          "description": "One net name per bit, least significant bit first.\n\nIf output ports are constantly zero/one or unused, the net name will be `const:0`, `const:1`, `const:x`,\nor `const:z`.\n\nThe length of the `nets` is equal to the width of the port.",
+          "examples": [
+            [
+              "CLK_I"
+            ],
+            [
+              "DELAY[0]",
+              "const:0"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "direction",
+        "nets"
+      ],
+      "title": "Port",
+      "type": "object"
+    },
+    "Wire": {
+      "additionalProperties": false,
+      "description": "An bundle of nets inside a module.\n\nWires can have one or more bits, therefore they contain a list of net names in `nets`.",
+      "properties": {
+        "name": {
+          "description": "Wire name.",
+          "title": "",
+          "type": "string"
+        },
+        "nets": {
+          "description": "One net name per bit, least significant bit first.\n\nIf parts of a wire are constantly zero/one or unused, the net name will be `const:0`, `const:1`, `const:x`,\nor `const:z`.",
+          "examples": [
+            [
+              "state[0]",
+              "state[1]"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "nets"
+      ],
+      "title": "Wire",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Gate-level netlist for the viewer.\n\n`modules[0]` is the top module. The remaining modules follow, sorted by\nname. `library` describes the gates and Liberty cells those modules\ninstantiate.",
+  "properties": {
+    "format": {
+      "const": "netlist-viewer",
+      "description": "Schema identifier.",
+      "title": "",
+      "type": "string"
+    },
+    "version": {
+      "const": 1,
+      "description": "Schema version.",
+      "title": "",
+      "type": "integer"
+    },
+    "top": {
+      "description": "Name of the top module. Equal to `modules[0].name`.",
+      "title": "",
+      "type": "string"
+    },
+    "modules": {
+      "description": "List of design modules. The top module is first; the rest are sorted by name.",
+      "items": {
+        "$ref": "#/$defs/Module"
+      },
+      "title": "",
+      "type": "array"
+    },
+    "library": {
+      "additionalProperties": {
+        "items": {
+          "$ref": "#/$defs/Pin"
+        },
+        "type": "array"
+      },
+      "description": "Mapping of library cell types to that cell's pins, in port order.",
+      "examples": [
+        {
+          "$_AND_": [
+            {
+              "direction": "input",
+              "name": "A"
+            },
+            {
+              "direction": "input",
+              "name": "B"
+            },
+            {
+              "direction": "output",
+              "name": "Y"
+            }
+          ]
+        }
+      ],
+      "title": "",
+      "type": "object"
+    }
+  },
+  "required": [
+    "format",
+    "version",
+    "top",
+    "modules",
+    "library"
+  ],
+  "title": "Netlist",
+  "type": "object"
+}
