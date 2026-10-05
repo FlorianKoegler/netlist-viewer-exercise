@@ -126,3 +126,6 @@ export interface Pin {
 - Skip links whose two ends are the same cell (e.g. a loop from `Q` to `D` on flipflops), if the occur.
 
 # Ideas
+
+- Color input and output **port nodes** differently.
+- Add an optional switch button, that hides or shows `CLK_I` and `RST_ASYNC_I`.
