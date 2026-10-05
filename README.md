@@ -7,10 +7,10 @@ The netlist was synthesized from the ["Mr. Coffee" example](https://imms-ilmenau
 
 The project shares (most of) the build stack as the noRTL Viewer:
 
-- esbuild for building and bundling into a single-page application
-- React 19 with React Router
-- Tailwind CSS
-- React Aria Components and shadcn for styling.
+- [esbuild](https://esbuild.github.io) for building and bundling into a single-page application
+- React 19 with [React Router](https://reactrouter.com).
+- [Tailwind CSS](https://tailwindcss.com)
+- [React Aria](https://react-aria.adobe.com) components (currently, just one button is added) and [shadcn](https://ui.shadcn.com) for styling.
 
 The noRTL Viewer also uses a mixture of [zustand](https://zustand.docs.pmnd.rs) and some manual implementations for state management. These are omitted for this project.
 
@@ -21,7 +21,7 @@ However, it currently only draws two hardcoded instances and one wire, as shown 
 
 ![Initial State](assets/initial_state.png)
 
-The synthesized netlist is included as a JSON object in `src/netlist/MrCoffee.json`. The `graph.tsx` page already imports it, and esbuild bundles the object into `app.js`.
+The synthesized netlist is included as a JSON object in `src/netlist/MrCoffee.json`. The `graph.tsx` page already imports it, and esbuild burns the object into `app.js`, so you don't need to care about uploading the JSON.
 
 Your task is to replace the hardcoded graph with one based on the imported netlist.
 You will probably not need to touch any other files. You may move the graph processing into a new module, if you like.
