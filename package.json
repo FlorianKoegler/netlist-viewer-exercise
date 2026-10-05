@@ -1,14 +1,14 @@
 {
-  "name": "nortl-netlist-min",
+  "name": "netlist-viewer-exercise",
   "version": "0.1.0",
   "private": true,
-  "description": "Minimal force-graph starter, same build stack as the noRTL live viewer",
+  "description": "Exercise for Netlist Viewer",
   "scripts": {
     "build": "node esbuild.mjs",
     "serve": "node esbuild.mjs --dev",
     "typecheck": "tsc --noEmit"
   },
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
